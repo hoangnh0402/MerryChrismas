@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Merry Christmas</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://merry-chrismas-by-tuanflute.vercel.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="🎄 Merry Christmas from tuanflute275 🎁">
+  <meta property="og:description" content="Send your Christmas greetings with joy and love.">
+  <meta property="og:image"
+    content="https://opengraph.b-cdn.net/production/images/7649741c-ae0d-4ec9-a3de-769d9f2c1ead.png?token=oqdom1kDvUcMCB8N_zqvZHEbj2MenT-PylqCwMxpymU&height=520&width=1200&expires=33270515159">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="merry-chrismas-by-tuanflute.vercel.app">
+  <meta property="twitter:url" content="https://merry-chrismas-by-tuanflute.vercel.app/">
+  <meta name="twitter:title" content="🎄 Merry Christmas from tuanflute275 🎁">
+  <meta name="twitter:description" content="Send your Christmas greetings with joy and love.">
+  <meta name="twitter:image"
+    content="https://opengraph.b-cdn.net/production/images/7649741c-ae0d-4ec9-a3de-769d9f2c1ead.png?token=oqdom1kDvUcMCB8N_zqvZHEbj2MenT-PylqCwMxpymU&height=520&width=1200&expires=33270515159">
+
+
+
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+  <script type="text/javascript" src="./javascript/snow.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+</head>
+
+<body>
+  <a href="javascript:void(0)" id="scroll-to-top" class="hvr-radial-out" style="display: block"><i
+      class="fa fa-angle-up"></i></a>
+
+  <a href="./firework.html" target="_blank" id="fireworks-btn" class="hvr-radial-out">
+    <i class="fa fa-fireworks"></i> firewords
+  </a>
+  <audio id="audioEl" autoplay></audio>
+  <header>
+    <div class="container-fluid">
+      <div class="row align-items-center justify-content-between">
+        <div class="logo col-2">
+          <a href="#home">
+            <img src="./images/logo3.jpg" alt="logo" />
+          </a>
+        </div>
+        <div class="menu col-19" style="justify-items: end">
+          <ul>
+            <li><a href="#home">Trang chủ</a></li>
+            <li><a href="#wish">Lời chúc</a></li>
+            <li><a href="#deals">Ảnh giáng sinh</a></li>
+            <li><a href="#donate">Đáng yêu nhiều chút</a></li>
+            <li><a href="#testimonial">Đánh giá</a></li>
+            <li><a href="#contact">Liên hệ</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="banner container" id="home">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-12 col-md-6 text-center text-md-left">
+          <div class="box-text-banner">
+            <div class="title">
+              <h1 class="display-4">Hãy chào đón mùa lễ hội này</h1>
+              <p class="lead">
+                Mở ra niềm vui, lan tỏa yêu thương và tạo nên những kỷ niệm đẹp bên những người thân yêu của bạn.
+              </p>
+            </div>
+            <div class="countdown">
+              <p id="countdown-timer"></p>
+            </div>
+
+            <a href="#wish" class="btn btn-danger py-3 mt-4 text-white">
+              Bắt đầu lễ Giáng Sinh của bạn
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 p-0 m-0">
+          <img src="./images/snowman4.png" alt="Snowman Image" class="img-fluid banner-image" />
+        </div>
+      </div>
+    </div>
+
+    <div id="snow"></div>
+
+    <div id="wish" class="services-box main-timeline-box" style="padding-bottom: 0">
+      <div class="about-a1">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="title-box text-center my-5">
+                <h2>Những lời chúc tốt đẹp nhất</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+              <div class="row align-items-center about-main-info">
+                <div class="col-lg-6 col-md-6 col-sm-12 text_align_center">
+                  <div class="full">
+                    <img class="img-responsive" src="images/santa2.png" alt="Image santa" />
+                  </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <h2 style="
+                        font-size: 45px;
+                        color: #e91327;
+                        font-weight: 600;
+                        margin-bottom: 20px;
+                      ">
+                    <img style="width: 60px" src="images/head_s.png" alt="Image Icon Snowman" />
+                    Lời chúc tới từ anh người yêu của bạn nè
+                  </h2>
+                  <p>
+                    Chúc em bé ấm áp của anh một mùa lễ hội tràn ngập niềm vui, ấm áp, hạnh phúc và những khoảnh khắc đáng nhớ bên những người thân yêu.
+                  </p>
+                  <p class="mb-5">
+                    Mong mùa lễ này mang đến bình an và niềm vui cho trái tim em và một ngày nào đó trong tương lai anh và em sẽ cùng nhau chào đón sự kỳ diệu của Giáng Sinh.
+                  </p>
+                  <!-- <a href="#" class="hvr-radial-out button-theme btn-readMore">Read More</a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-a1" style="
+            background: #f7f7f7;
+            margin-top: 50px;
+            padding-top: 75px;
+            padding-bottom: 50px;
+          ">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+              <div class="row align-items-center about-main-info">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <h2 style="font-size: 45px; color: #e91327; font-weight: 600">
+                    <img style="width: 60px" src="images/head_s.png" alt="#" />
+                    Em tưởng hết lời chúc rồi ư! No no
+                  </h2>
+                  <p class="mt-3">
+                    Biết rằng học y là áp lực, nhưng cùng nhau cố gắng nhá!
+                  </p>
+                  <p class="mb-5">
+                    Chúc cho chúng ta cùng nhau cố gắng, cùng nhau đi tiếp trên chặng đường còn lại.
+                  </p>
+                  <!-- <a href="#" class="hvr-radial-out button-theme btn-readMore">Read More</a> -->
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 text_align_center">
+                  <div class="full">
+                    <img class="img-responsive" src="images/w2.png" alt="#" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="deals" class="services-box main-timeline-box">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="title-box text-center my-5">
+              <h2>Những bức ảnh về lễ Giáng sinh</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 col-sm-6">
+            <figure class="effect-service">
+              <img src="images/d1.png" alt="" />
+              <figcaption>
+                <h2>One</h2>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <a href="#">View more</a>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-lg-6 col-sm-6">
+            <figure class="effect-service">
+              <img src="images/d2.png" alt="" />
+              <figcaption>
+                <h2>Two</h2>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <a href="#">View more</a>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-lg-6 col-sm-6">
+            <figure class="effect-service">
+              <img src="images/d3.png" alt="" />
+              <figcaption>
+                <h2>Three</h2>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <a href="#">View more</a>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-lg-6 col-sm-6">
+            <figure class="effect-service">
+              <img src="images/d4.png" alt="" />
+              <figcaption>
+                <h2>Four</h2>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+                <a href="#">View more</a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="donate" class="gallery-box" style="background: #f7f7f7; padding-top: 90px">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="title-box">
+              <h2>Đáng yêu nhiều chút❤️</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <ul class="popup-gallery clearfix">
+            <li>
+              <a href="images/img1.png">
+                <img class="img-fluid" src="images/img1.png" alt="single image" />
+                <span class="overlay"><i class="fa-solid fa-image" aria-hidden="true"></i></span>
+              </a>
+            </li>
+            <li>
+              <a href="images/img2.png">
+                <img class="img-fluid" src="images/img2.png" alt="single image" />
+                <span class="overlay"><i class="fa-solid fa-image" aria-hidden="true"></i></span>
+              </a>
+            </li>
+            <li>
+              <a href="images/img3.png">
+                <img class="img-fluid" src="images/img3.png" alt="single image" />
+                <span class="overlay"><i class="fa-solid fa-image" aria-hidden="true"></i></span>
+              </a>
+            </li>
+            <!-- <li>
+              <a href="images/d4.png">
+                <img class="img-fluid" src="images/d4.png" alt="single image" />
+                <span class="overlay"><i class="fa-solid fa-image" aria-hidden="true"></i></span>
+              </a>
+            </li>
+            <li>
+              <a href="images/d1.png">
+                <img class="img-fluid" src="images/d1.png" alt="single image" />
+                <span class="overlay"><i class="fa-solid fa-image" aria-hidden="true"></i></span>
+              </a>
+            </li>
+            <li>
+              <a href="images/d2.png">
+                <img class="img-fluid" src="images/d2.png" alt="single image" />
+                <span class="overlay"><i class="fa-solid fa-image" aria-hidden="true"></i></span>
+              </a>
+            </li>
+            <li>
+              <a href="images/d3.png">
+                <img class="img-fluid" src="images/d3.png" alt="single image" />
+                <span class="overlay"><i class="fa-solid fa-image" aria-hidden="true"></i></span>
+              </a>
+            </li>
+            <li>
+              <a href="images/d4.png">
+                <img class="img-fluid" src="images/d4.png" alt="single image" />
+                <span class="overlay"><i class="fa-solid fa-image" aria-hidden="true"></i></span>
+              </a>
+            </li>
+            <li>
+              <a href="images/d1.png">
+                <img class="img-fluid" src="images/d1.png" alt="single image" />
+                <span class="overlay"><i class="fa-solid fa-image" aria-hidden="true"></i></span>
+              </a>
+            </li> --> 
+          </ul>
+        </div>
+      </div>
+      <div id="imagePopup" class="popup-overlay" style="display: none">
+        <div class="popup-content">
+          <span id="closeImagePopup" class="close-btn">&times;</span>
+          <!-- Nút close bên ngoài -->
+          <img id="popupImage" src="" alt="Popup Image" />
+          <div class="caption" id="imageCaption"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="testimonial" class="gallery-box" style="padding-top: 80px; padding-bottom: 50px">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="title-box">
+              <h2>Sến thêm một chút nhá</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8 offset-md-2 col-10 offset-1 testimonial_slider">
+            <div id="client_slider" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#client_slider" data-slide-to="0" class="active"></li>
+                <li data-target="#client_slider" data-slide-to="1" class=""></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item text-center active carousel-item-left">
+                  <div class="testimonial_img d-flex justify-content-center">
+                    <img style="width: 150px !important" class="d-block rounded-circle" src="images/m3.webp" alt="#" />
+                  </div>
+                  <h5 class="mt-4 mb-0">
+                    <strong class="text-uppercase" style="color: #e91327; padding-bottom: 0">Hina Nguyễn</strong>
+                  </h5>
+                  <p class="m-0 pt-3">
+                    Anh yêu em❤️
+                  </p>
+                </div>
+                <div class="carousel-item text-center carousel-item-next carousel-item-left">
+                  <div class="testimonial_img d-flex justify-content-center">
+                    <img width="150" height="150" style="width: 150px; object-fit: cover" class="d-block rounded-circle"
+                      src="images/m2.jpg" alt="#" />
+                  </div>
+                  <h5 class="mt-4 mb-0">
+                    <strong class="text-uppercase" style="color: #e91327; padding-bottom: 0">Hina Nguyễn</strong>
+                  </h5>
+                  <p class="m-0 pt-3">
+                    Anh yêu em❤️
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact" class="contact-box" style="background: #fff; padding-top: 80px">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="title-box">
+              <h2>Liên hệ với tớ<br>(Nhắc nếu bạn quên cả thông tin liên hệ của tôi)</h2>       
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-7 col-sm-7 col-xs-12">
+            <div class="contact-block">
+              <form id="contactForm" method="post" action="">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="name" name="name" placeholder="Your Name"
+                        data-error="Please enter your name" />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input type="text" placeholder="Your Email" id="email" class="form-control" name="email"
+                        data-error="Please enter your email" />
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <input type="text" placeholder="Your number" id="number" class="form-control" name="number"
+                        data-error="Please enter your number" />
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <textarea class="form-control" id="message" placeholder="Your Message" rows="8"></textarea>
+                    </div>
+                    <div class="submit-button text-center">
+                      <button class="btn btn-common" id="submit" type="submit">Send Message</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+
+            </div>
+          </div>
+
+          <div class="col-lg-5 col-sm-5 col-xs-12">
+            <div class="left-contact">
+              <div class="media cont-line">
+                <div class="media-left icon-b">
+                  <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                </div>
+                <div class="media-body dit-right">
+                  <h4>Địa chỉ</h4>
+                  <p>CLB tin học HIT - Đại học Công nghiệp Hà Nội</p>
+                </div>
+              </div>
+              <div class="media cont-line">
+                <div class="media-left icon-b">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                </div>
+                <div class="media-body dit-right">
+                  <h4>Email</h4>
+                  <a href="mailto:tuanflute275@gmail.com">nguyenhuyhoangpt0402@gmail.com</a>
+                </div>
+              </div>
+              <div class="media cont-line">
+                <div class="media-left icon-b">
+                  <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                </div>
+                <div class="media-body dit-right">
+                  <h4>Số điện thoại</h4>
+                  <a href="tel:+84982467073">+84379327548</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer style="background-color: #6b7784; padding: 50px 0">
+    <div class="container">
+      <div class="row justify-content-between align-items-start">
+        <div class="col-lg-4 col-md-6">
+          <img src="./images/logo.png" alt="logo" style="width: 150px; margin-bottom: 20px" />
+          <p class="text-white">
+            Lời chúc Giáng Sinh dành cho em ❤️
+          </p>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <h3 class="text-white">Liên hệ</h3>
+          <p class="text-white">
+            <strong>Địa Chỉ:</strong> CLB Tin học HIT - Đại học Công nghiệp Hà Nội<br />
+            <strong>Email:</strong>
+            <a href="mailto:tuanflute275@gmail.com" style="color: #70c6eb">nguyenhuyhoangpt0402@gmail.com</a><br />
+            <strong>Số điện thoại:</strong>
+            <a href="tel:+84982467073" style="color: #70c6eb">+84379327548</a><br />
+          </p>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h3 class="text-white">Pages</h3>
+          <ul style="list-style: none; padding: 0">
+            <li>
+              <a href="#home" style="color: #70c6eb; text-decoration: none">Trang chủ</a>
+            </li>
+            <li>
+              <a href="#wish" style="color: #70c6eb; text-decoration: none">Lời chúc</a>
+            </li>
+            <li>
+              <a href="#deals" style="color: #70c6eb; text-decoration: none">Ảnh giáng sinh</a>
+            </li>
+            <li>
+              <a href="#donate" style="color: #70c6eb; text-decoration: none">Quà cho em</a>
+            </li>
+            <li>
+              <a href="#testimonial" style="color: #70c6eb; text-decoration: none">Sến thêm một chút</a>
+            </li>
+            <li>
+              <a href="#contact" style="color: #70c6eb; text-decoration: none">Liên hệ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center mt-4">
+          <p class="text-white">
+            &copy; 2024 Christmas. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="./javascript/audio.js"></script>
+  <script src="./javascript/script.js"></script>
+  <script>
+    $(document).ready(function () {
+      function validateEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(email);
+      }
+
+      // Hàm kiểm tra số điện thoại Việt Nam
+      function validatePhoneNumber(number) {
+        const re = /^(0[3-9])\d{8}$/; // Kiểm tra số điện thoại Việt Nam (từ 10 đến 11 chữ số)
+        return re.test(number);
+      }
+
+      $("#contactForm").on("submit", function (event) {
+        // Chặn hành vi submit mặc định
+        event.preventDefault();
+
+        // Lấy giá trị các trường
+        const name = $("#name").val().trim();
+        const email = $("#email").val().trim();
+        const number = $("#number").val().trim();
+        const message = $("#message").val().trim();
+
+        // Kiểm tra dữ liệu
+        if (!name && !email && !number && !message) {
+          toastr.error("No data provided!");
+        } else {
+          let isValid = true;
+          if (!validateEmail(email)) {
+            toastr.error("Please enter a valid email address.");
+            isValid = false;
+          }
+          if (!validatePhoneNumber(number)) {
+            toastr.error("Please enter a valid phone number (Vietnamese format).");
+            isValid = false;
+          }
+
+          if (isValid) {
+            const formData = {
+              name: name,
+              email: email,
+              number: number,
+              message: message
+            };
+
+            // Kiểm tra xem đã có dữ liệu lưu trữ chưa, nếu có thì thêm mới vào
+            let storedData = JSON.parse(localStorage.getItem('formData')) || [];
+            storedData.push(formData);
+            localStorage.setItem('dataContact', JSON.stringify(storedData));
+            toastr.success("Data saved successfully in localStorage!");
+          }
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
